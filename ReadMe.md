@@ -1,5 +1,5 @@
 # Adaptive Outlier Optimization for Online Test-Time OOD Detection
-This project is for the paper: AUTO: Adaptive Outlier Optimization for Online Test-Time OOD Detection.
+This project is for the paper: [AUTO: Adaptive Outlier Optimization for Online Test-Time OOD Detection.](https://arxiv.org/abs/2303.12267)
 
 ## Required Packages
 
