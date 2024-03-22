@@ -49,7 +49,6 @@ def batch_train(mem_b,mem_l,net,net2,input,optim):
     #print(smax_out_org)
         #pred_out_org = np.argmax(smax_out_org, axis=1)
     #print(pred_out_org)
-        #loss2 = loss_func2(logit_out,torch.full([logit_out.shape[0], logit_out.shape[1]], 1 / logit_out.shape[1]).cuda())
         loss2 = 1.*-(logit_out.mean(1) - torch.logsumexp(logit_out, dim=1)).mean()
         #loss3=get_margin_loss(logit_out.cpu(),pred_out_org,cfg.consis_idx)
         #print(loss1,loss2,loss3)
